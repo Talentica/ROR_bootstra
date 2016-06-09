@@ -153,4 +153,4 @@ input[type='file'] { color:transparent;border: none !important;   }
 .new_user input.error {border:1px solid #b30000;}
 #email_available { background-color: green;color :white;border-radius: 4px; padding: 7px;position: relative }
 .forgot_pass .new_user input[type="submit"] { margin-left: 208px;margin-top: 28px; }
-
+.map {width: 800px; height: 400px;}
