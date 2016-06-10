@@ -15,6 +15,7 @@ Rails.application.routes.draw do
   get "/stream", to: "profiles#live_streaming"
   get "admins/users", to: "admins#list"
   get "/admins/add_members", to: redirect("/admins/new")
+  get "/admins/assign_roles", to: "admins#assign_roles"
   match "/admins/role_userole" => "admins#users", via: [:get, :post]
   match "/role_userole" => "admins#users", via: [:get, :post]
   resources :users

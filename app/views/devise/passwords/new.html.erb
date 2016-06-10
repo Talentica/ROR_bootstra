@@ -1,18 +1,24 @@
 <h2>Forgot your password?</h2>
 <p id="notice"><%= notice %></p>
 <div class = "forgot_pass">
-<%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
-  <%= devise_error_messages! %>
+		<%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
+		  <%= devise_error_messages! %>
+		  <table class = "login-table">
 
-  <div class="field">
-    <%= f.label :email %>
-    <%= f.email_field :email, autofocus: true %>
-  </div>
+			  <div class="field">
+				  <tr>
 
-  <div class="actions">
-    <%= f.submit "Send me reset password instructions" %>
-  </div>
-<% end %>
+					  <td class="text-input"><%= f.label :email %></td>
+					  <td class="text-input"><%= f.email_field :email, autofocus: true %></td>
+				  </tr>
+			  </div>
 
-<%= render "devise/shared/links" %>
+			  <div class="actions input">
+			    <tr><td></td>
+				    <td class="text-input"><%= f.submit "Send me reset password instructions", class: "btn-default login" %></td>
+			    </tr>
+			  </div>
+		  </table>
+		<%= render "devise/shared/links" %>
+	<% end %>	
 </div>

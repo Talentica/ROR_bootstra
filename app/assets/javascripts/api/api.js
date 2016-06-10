@@ -6,10 +6,10 @@ var API =  (function()
      {
        user_email = $( ".new_user #user_email" ).val()
        $.post( "check_availability/email", { email: user_email },function(data){
-       $('#inprogess').remove()
+       $('#inprogress').remove()
        $('.new_user #commit').removeAttr('disabled');
-            node = "<span class = 'email-validation' id = "+data.notice_class+" > "+data.message+" </span>"
-             $('#user_email').after(node);
+            node = "<td><span class = 'email-validation' id = "+data.notice_class+" > "+data.message+" </span></td>"
+             $('#validation').append(node);
         });
      },
     

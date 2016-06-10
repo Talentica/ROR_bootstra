@@ -2,14 +2,17 @@
 <div class = "user-details" >
    <h1>Welcome <%=@profile.fname %> &nbsp<%=@profile.lname %> </h1>
       <p>
-      <strong>Fname:</strong>
+      <strong>First Name:</strong>
       <%= @profile.fname %>
      </p>
-    <strong>Roles</strong> <%= display_user_roles  @user%>
      <p>
-      <strong>Lname:</strong>
+      <strong>Last Name:</strong>
       <%= @profile.lname %>
-   </p>
+     </p>
+     <p>
+      <strong>Assigned Roles:</strong>
+      <ul><%= display_user_roles  @user%></ul>
+     </p>
 </div>
 
 <%= form_for @user, 

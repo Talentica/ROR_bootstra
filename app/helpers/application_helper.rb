@@ -15,7 +15,7 @@ module ApplicationHelper
     arr = ""
     s.each do |sid|
       CONFIG.values.each do |i|
-        arr += "<div> #{i['name']} </div>" if i["id"].to_i == sid
+        arr += "<li> #{i['name']} </li>" if i["id"].to_i == sid
       end
     end
     arr.html_safe
