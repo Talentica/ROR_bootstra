@@ -1,0 +1,81 @@
+.navbar-static-top {
+    width: 100%;
+}
+
+.links {
+    padding-top: 15px;
+}
+
+html, body {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.login-table {
+	 border-collapse: separate;
+	 border-spacing: 0 1em;
+}
+
+.text-input {
+	text-align: right;
+}
+
+.validation-message {
+	text-align: right;
+}
+.text-label {
+	text-align: left;
+	font-weight: bold;
+}
+
+h2 {
+	padding-left: 50px;
+}
+
+.login {
+	background-color: #cacaca;
+	border-color: #cccccc;
+	color: #525252;
+	height: 40px;
+	padding: 11px 35px 12px 29px;
+  text-decoration: none; 
+}
+
+/*.new_user input { border: 1px solid #c2c2c2; height: 29px; padding: 3px 11px 5px 8px;}
+*/
+
+/*.forgot_pass .new_user {
+ padding-bottom: 20px;
+}*/
+
+.new_user #user_email{ width:381px;margin-left:102px }
+.new_user #user_password { width : 381px;margin-left:74px }
+.new_user #user_password_confirmation { width :381px; margin-left:20px}
+.new_user #user_firstname { margin-left :101px; width:185px; margin-right: 5px; }
+.new_user #user_lastname {width:185px }
+.new_user #commit { margin-left :360px }
+.new_user #user_avatar { margin-left :10px; display: inline; }
+.new_user span {
+	color: red;
+}
+
+#validation {
+	padding-left: 10px;
+}
+
+.admin-options {
+	padding: 30px;
+}
+
+.assign_roles {
+	padding-top: 25px;
+}
+
+.role_submit {
+	position: relative;
+}
+
+.right-end-menu {
+	padding: 15px;
+}

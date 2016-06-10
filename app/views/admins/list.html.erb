@@ -1,6 +1,7 @@
-
+<h3>Members</h3>
+<br><br>
 <%= form_tag("/update", method: "post", id: "user-edit" ) do %>
-<table  >
+<table>
 <% @users.each do |m| %>
 <tr id = "<%=m.id%>" class ="usero" > 
   <td> <input  type = 'text' value = <%=m.firstname%> name = "userori[<%=m.id%>[firstname]]"  readonly=""  ></td>

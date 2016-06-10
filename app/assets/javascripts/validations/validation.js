@@ -19,11 +19,11 @@ var VALIDATION = (function()
       { 
         $("#email_not_available").remove()
         $("#email_available").remove() 
-        WaitingSignal = "<span id = 'inprogess'> Please Wait ....</span>"
+        WaitingSignal = "<td><span id = 'inprogress'> Please Wait ....</span></td>"
         // $('#user_email').after(WaitingSignal)
         $('.new_user #commit').attr('disabled', 'disabled');
         if (VALIDATION.validateEmail()) {
-           $('#user_email').after(WaitingSignal)
+           $('#validation').append(WaitingSignal)
           API.CheckEmailAvailability()
         }
       } 

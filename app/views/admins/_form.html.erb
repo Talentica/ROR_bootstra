@@ -1,3 +1,4 @@
+<h3> Add Member </h3>
 <%= form_for @user , :url => url_for(:controller => 'admins', :action => 'add_members'),
    html: { class: "admin-add-member" }  do |f| %>
 <% if  !@response.nil? &&  !@response.errors.full_messages.empty? %>

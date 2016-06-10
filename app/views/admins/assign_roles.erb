@@ -1,0 +1,21 @@
+<h3> Assign Roles </h3>
+<div class="assign_roles">
+	<label for="male">Assign to:</label> 
+	 <%= text_field(:role, :userole, class: "admin-add-member-role" ,:placeholder => "search members") %>
+
+	 <%= form_tag ("/admin_assign_roles") do %>
+		 <div id ="data-set" class = "suggestion-data" > </div>
+		 <div id ="role" class = "suggestion-role" > <%= render 'roles' %></div>
+		 <div class="role_submit">
+			 <input type ="submit" value ="Assign Roles" class = "sub-roles" />
+		 </div>
+	<% end %>
+</div>
+
+<%= javascript_tag  do -%>
+ $( "#role_userole" ).keypress(function(e) {
+    if (e.which != 13 ){
+    ForaAotucompleteFiled(this.id)
+    }
+  });
+<% end %>

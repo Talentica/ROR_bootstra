@@ -64,4 +64,7 @@ class AdminsController < ApplicationController
       format.json { render json: @user.id }
     end
   end
+  
+  def assign_roles
+  end
 end
