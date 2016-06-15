@@ -32,6 +32,6 @@ module ApplicationHelper
   end
 
   def show_user_unread_notification(user)
-    Notification.where("status = false AND user_id = #{user}").count
+    Notification.where("seen = false AND user_id = #{user}").count
   end
 end
